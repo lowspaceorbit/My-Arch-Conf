@@ -1,0 +1,18 @@
+﻿
+sudo pacman -S amdvlk ark autoconf automake bashtop binutils bison blueberry bluedevil bluez bluez-utils bpytop bridge-utils btrfs-progs cdrdao cdrtools cmatrix discord dnsmasq dolphin dolphin-emu dvd+rw-tools edk2-ovmf efibootmgr figlet firefox flex fwupd garcon gawk gcc gnome-disk-utility groff gtkmm gvfs gzip htop iptables-nft js78 k3b kate kdenlive lib32-amdvlk lib32-libldap lib32-libva-mesa-driver lib32-mesa lib32-mesa-vdpau lib32-vulkan-radeon libreoffice-fresh libtool libva-intel-driver libva-mesa-driver libvirt libvirt-glib libvirt-python liquidctl lutris m4 make mesa-vdpau  mousepad nano neofetch network-manager-applet obs-studio okteta openbsd-netcat openssh p7zip patch pavucontrol pcsclite pcsx2 pkgconf pulseaudio python-dnspython python-fonttools python-pip python-wheel qbittorrent qemu qemu-arch-extra radeontop ristretto sddm smartmontools steam stress sudo swtpm texinfo tree tumbler util-linux util-linux-libs vde2 vi vim virt-install virt-manager vlc vulkan-radeon wget which wireless_tools wpa_supplicant xarchiver xfce4 zram-generator zsh
+
+
+yay -S all-repository-fonts basemark downgrade rpcs3-git ryujinx-ldn-bin yuzu-mainline-bin bash-pipes minecraft-launcher spotify spicetify-cli
+
+sudo chmod a+wr /opt/spotify
+sudo chmod a+wr /opt/spotify/Apps -R
+
+git clone https://github.com/morpheusthewhite/spicetify-themes.git
+cd spicetify-themes
+cp -r * ~/.config/spicetify/Themes
+
+spicetify config current_theme sleek
+spicetify config color_scheme Elementary
+spicetify config custom_apps lyrics-plus
+spicetify config custom_apps new-releases
+spicetify backup apply
