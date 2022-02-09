@@ -8,7 +8,7 @@ read YN
 
 if [ $YN = "y" ]
   then
-  sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && yay -Sy
+ git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && yay -Sy
 fi
 
 clear
@@ -18,7 +18,7 @@ read yn4
 
 if [ $yn4 = "y" ]
     then
-sudo wget https://installers.privateinternetaccess.com/download/pia-linux-3.2-06857.run
+wget https://installers.privateinternetaccess.com/download/pia-linux-3.2-06857.run
 chmod +x pia-linux-3.2-06857.run
 sudo rm -r pia-linux-3.2-06857.run.1
 ./pia-linux-3.2-06857.run
