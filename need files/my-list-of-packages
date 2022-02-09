@@ -8,9 +8,23 @@ read YN
 
 if [ $YN = "y" ]
   then
-   ./Setting-Up-YAY 
+  sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && yay -Sy
 fi
 
+clear
+
+echo "do you want to install PIA VPN? 'y' for Yes 'N' for No"
+read yn4
+
+if [ $yn4 = "y" ]
+    then
+sudo wget https://installers.privateinternetaccess.com/download/pia-linux-3.2-06857.run
+sudo chmod +x pia-linux-3.2-06857.run
+sudo ./pia-linux-3.2-06857.run
+sudo rm -r pia-linux-3.2-06857.run.1
+fi
+
+sleep 3
 clear
 
 echo "Do you want to install my YAY PKGs? 'y' for Yes 'N' to No"
@@ -20,6 +34,9 @@ if [ $YN2 = "y" ]
   then
  yay -S all-repository-fonts basemark downgrade rpcs3-git ryujinx-ldn-bin yuzu-mainline-bin bash-pipes minecraft-launcher spotify spicetify-cli
 fi
+
+sleep 2
+clear
 
 echo "do you want to install Custom Spotify theme (you had to install YAY and YAY PKGs) 'y' to install 'N' to not"
 read YN3
