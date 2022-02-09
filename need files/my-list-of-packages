@@ -19,9 +19,10 @@ read yn4
 if [ $yn4 = "y" ]
     then
 sudo wget https://installers.privateinternetaccess.com/download/pia-linux-3.2-06857.run
-sudo chmod +x pia-linux-3.2-06857.run
-sudo ./pia-linux-3.2-06857.run
+chmod +x pia-linux-3.2-06857.run
 sudo rm -r pia-linux-3.2-06857.run.1
+./pia-linux-3.2-06857.run
+
 fi
 
 sleep 3
