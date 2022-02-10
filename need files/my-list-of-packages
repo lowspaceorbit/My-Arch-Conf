@@ -48,7 +48,7 @@ git clone https://github.com/morpheusthewhite/spicetify-themes.git
 cd spicetify-themes
 cp -r * ~/.config/spicetify/Themes
 
-spicetify config current_theme sleek
+spicetify config current_theme Sleek
 spicetify config color_scheme Elementary
 spicetify config custom_apps lyrics-plus
 spicetify config custom_apps new-releases
