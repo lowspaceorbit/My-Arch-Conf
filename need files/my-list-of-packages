@@ -26,6 +26,7 @@ if [ $YN8 = "y" ]
      sudo pacman -S nvidia nvidia-utils
      mkdir /etc/pacman.d/hooks/
      cp -r nvidia.hook /etc/pacman.d/hooks/
+fi
 
 cd ..
 
