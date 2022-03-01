@@ -81,3 +81,16 @@ spicetify config custom_apps lyrics-plus
 spicetify config custom_apps new-releases
 spicetify backup apply
 fi
+
+clear
+
+
+echo "do you want to install My EMU Confs as well?(you had to install YAY and YAY PKGs) 'y' to install 'N' to not"
+read YN9
+
+if [ $YN9 = "y" ]
+  then
+sudo cp -r EMU-Conf-files/rpcs3 ~/.config
+sudo cp -r EMU-Conf-files/PCSX2 ~/.config
+sudo cp -r EMU-Conf-files/dolphin-emu ~/.config
+
