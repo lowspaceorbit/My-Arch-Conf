@@ -93,4 +93,4 @@ if [ $YN9 = "y" ]
 sudo cp -r EMU-Conf-files/rpcs3 ~/.config
 sudo cp -r EMU-Conf-files/PCSX2 ~/.config
 sudo cp -r EMU-Conf-files/dolphin-emu ~/.config
-
+fi
