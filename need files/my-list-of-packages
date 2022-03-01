@@ -3,6 +3,9 @@
 sudo pacman -Sy
 sudo pacman -S ark autoconf automake bashtop binutils bison blueberry bluedevil bluez bluez-utils bpytop bridge-utils btrfs-progs cdrdao cdrtools cmatrix discord dnsmasq dolphin dolphin-emu dvd+rw-tools edk2-ovmf efibootmgr figlet firefox flex fwupd garcon gawk gcc gnome-disk-utility groff gtkmm gvfs gzip htop iptables-nft js78 k3b kate kdenlive lib32-libldap lib32-libva-mesa-driver lib32-mesa libreoffice-fresh libtool libva-intel-driver libva-mesa-driver libvirt libvirt-glib libvirt-python liquidctl lutris m4 make mousepad nano neofetch network-manager-applet obs-studio okteta openbsd-netcat openssh p7zip patch pavucontrol pcsclite pcsx2 pkgconf pulseaudio python-dnspython python-fonttools python-pip python-wheel qbittorrent qemu qemu-arch-extra radeontop ristretto sddm smartmontools steam stress sudo swtpm texinfo tree tumbler util-linux util-linux-libs vde2 vi vim virt-install virt-manager vlc wget which wireless_tools wpa_supplicant xarchiver xfce4 zram-generator zsh btop flameshot amd-ucode signal-desktop gnome-keyring seahorse
 
+clear
+sleep .2
+
 echo "Do you want to install my AMD Drivers? 'y' for Yes 'N' to No"
 read YN6
 
@@ -11,6 +14,9 @@ if [ $YN6 = "y" ]
     sudo pacman -S lib32-vulkan-radeon vulkan-radeon amdvlk lib32-amdvlk lib32-mesa-vdpau mesa-vdpau
 fi
 
+clear
+sleep .2
+
 echo "Do you want to install my Intel Drivers? 'y' for Yes 'N' to No"
 read YN7
 
@@ -18,6 +24,9 @@ if [ $YN7 = "y" ]
     then
      sudo pacman -S xf86-video-intel vulkan-intel lib32-vulkan-intel
 fi
+
+clear
+sleep .2
 
 echo "Do you want to install my NVidia Drivers? 'y' for Yes 'N' to No"
 read YN8
@@ -29,6 +38,9 @@ if [ $YN8 = "y" ]
      cp -r nvidia.hook /etc/pacman.d/hooks/
 fi
 
+clear
+sleep .3
+
 cd ..
 
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && yay -Sy
@@ -36,6 +48,7 @@ git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && yay -Sy
 cd need\ files
 
 clear
+sleep .2
 
 echo "do you want to install PIA VPN? 'y' for Yes 'N' for No"
 read yn4
@@ -49,8 +62,9 @@ sudo rm -r pia-linux-3.2-06857.run.1
 
 fi
 
-sleep 3
+sleep 1
 clear
+sleep .2
 
 echo "Do you want to install my YAY PKGs? 'y' for Yes 'N' to No"
 read YN2
@@ -60,8 +74,8 @@ if [ $YN2 = "y" ]
  yay -S all-repository-fonts basemark downgrade rpcs3-git ryujinx-ldn-bin yuzu-mainline-bin bash-pipes minecraft-launcher spotify spicetify-cli speedtest-cli-git ani-cli
 fi
 
-sleep 2
 clear
+sleep .5
 
 echo "do you want to install Custom Spotify theme (you had to install YAY and YAY PKGs) 'y' to install 'N' to not"
 read YN3
@@ -83,7 +97,7 @@ spicetify backup apply
 fi
 
 clear
-
+sleep .5
 
 echo "do you want to install My EMU Confs as well?(you had to install YAY and YAY PKGs) 'y' to install 'N' to not"
 read YN9
