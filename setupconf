@@ -17,6 +17,7 @@ cd need\ files/
 echo "making the files able to launch"
 sudo cp -r pacman.conf /etc
 chmod +x my-list-of-packages
+chmod +x VmWare
 sleep 1
 clear
 

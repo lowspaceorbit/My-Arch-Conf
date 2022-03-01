@@ -1,0 +1,3 @@
+sudo pacman -S fuse2 gtkmm linux-headers pcsclite libcanberra && yay -S --noconfirm --needed ncurses5-compat-libs && yay -S --noconfirm --needed  vmware-workstation && sudo systemctl enable vmware-networks.service  vmware-usbarbitrator.service vmware-hostd.service && sudo modprobe -a vmw_vmci vmmon
+
+

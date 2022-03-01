@@ -66,6 +66,17 @@ sleep 1
 clear
 sleep .2
 
+echo “do you want to install VMWare 'y' for Yes 'N' for No”
+read yn16
+
+if [ $yn16 = ‘y’ ]
+	then
+./VmWare
+if
+
+clear
+sleep .4
+
 echo "Do you want to install my YAY PKGs? 'y' for Yes 'N' to No"
 read YN2
 
