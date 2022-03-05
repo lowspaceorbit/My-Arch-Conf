@@ -56,6 +56,7 @@ sudo systemctl enable sddm
 sudo systemctl enable sshd
 sudo systemctl enable NetworkManager
 sudo systemctl enable libvirtd.service
+sudo systemctl enable bluetooth
 sudo enable virtlogd.socket
 sudo virsh net-start default
 sudo virsh net-autostart default
