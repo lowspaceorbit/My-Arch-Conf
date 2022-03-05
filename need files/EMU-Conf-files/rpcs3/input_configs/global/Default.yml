@@ -1,6 +1,6 @@
 Player 1 Input:
   Handler: Evdev
-  Device: Microsoft X-Box 360 pad
+  Device: Sony PLAYSTATION(R)3 Controller
   Config:
     Left Stick Left: LX-
     Left Stick Down: LY+
@@ -39,10 +39,10 @@ Player 1 Input:
     Right Pad Squircling Factor: 5000
     Color Value R: 0
     Color Value G: 0
-    Color Value B: 0
+    Color Value B: 20
     Blink LED when battery is below 20%: true
     Use LED as a battery indicator: false
-    LED battery indicator brightness: 50
+    LED battery indicator brightness: 10
     Enable Large Vibration Motor: true
     Enable Small Vibration Motor: true
     Switch Vibration Motors: false
@@ -114,8 +114,8 @@ Player 2 Input:
     Analog Button Lerp Factor: 100
     Trigger Lerp Factor: 100
     Device Class Type: 0
-    Vendor ID: 0
-    Product ID: 0
+    Vendor ID: 1356
+    Product ID: 616
 Player 3 Input:
   Handler: "Null"
   Device: "Null"
