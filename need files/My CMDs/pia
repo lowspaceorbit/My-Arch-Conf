@@ -1,0 +1,44 @@
+#PIA VPN start
+
+piactl login PIA/Login
+
+clear
+#do you want to start
+echo "pick 'c' to connect, pick 'd' to disconnect, and pick 'Q' to Quit"
+read YN
+
+clear
+echo "Ok!"
+
+if [ $YN = 'c' ]
+then
+        sleep .2
+        clear
+        sleep .2
+        echo "This Will Take A Few Seconds"
+        piactl connect
+        sleep 3
+        piactl get connectionstate
+        piactl get region
+        piactl get vpnip
+fi
+
+if [ $YN = 'd' ]
+    then
+       sleep .2
+       clear
+       sleep .2
+       echo 'Disconnecting'
+        piactl disconnect
+        sleep 2
+        piactl get connectionstate
+fi
+
+if [ $YN = 'Q' ]
+    then
+        sleep .2
+        clear
+        echo "Quiting"
+        sleep 2
+        clear
+fi
