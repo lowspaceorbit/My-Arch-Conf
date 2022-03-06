@@ -105,6 +105,7 @@ spicetify config color_scheme Elementary
 spicetify config custom_apps lyrics-plus
 spicetify config custom_apps new-releases
 spicetify backup apply
+spicetify apply
 fi
 
 clear
