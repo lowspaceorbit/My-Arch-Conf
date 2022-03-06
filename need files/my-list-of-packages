@@ -99,12 +99,21 @@ sudo chmod a+wr /opt/spotify/Apps -R
 git clone https://github.com/morpheusthewhite/spicetify-themes.git
 cd spicetify-themes
 cp -r * ~/.config/spicetify/Themes
+cp -r Extensions ~/.config/spicetify
 
 spicetify config current_theme Sleek
 spicetify config color_scheme Elementary
 spicetify config custom_apps lyrics-plus
 spicetify config custom_apps new-releases
-spicetify backup apply
+spicetify config extensions copytoclipboard.js
+spicetify config extensions fullAlbumDate.js
+spicetify config extensions fullAppDisplayMod.js
+spicetify config extensions group-session.js
+spicetify config extensions QueueTime.js
+spicetify config extensions savePlaylists.js
+spicetify config extensions toggleFriendActivity.js
+spicetify config extensions volumePercentage.js
+spicetify backup
 spicetify apply
 fi
 

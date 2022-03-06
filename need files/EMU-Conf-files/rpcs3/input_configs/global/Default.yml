@@ -1,6 +1,6 @@
 Player 1 Input:
   Handler: Evdev
-  Device: Sony PLAYSTATION(R)3 Controller
+  Device: Microsoft X-Box 360 pad
   Config:
     Left Stick Left: LX-
     Left Stick Down: LY+
@@ -21,11 +21,11 @@ Player 1 Input:
     Down: Hat0 Y+
     Right: Hat0 X+
     Up: Hat0 Y-
-    R1: TR
-    R2: RZ+
+    R1: RZ+
+    R2: TR
     R3: Thumb R
-    L1: TL
-    L2: LZ+
+    L1: LZ+
+    L2: TL
     L3: Thumb L
     Pressure Intensity Button: ""
     Pressure Intensity Percent: 50

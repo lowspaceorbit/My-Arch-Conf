@@ -32,6 +32,7 @@ Core:
   Enable TSX: Disabled
   Accurate xfloat: false
   Approximate xfloat: true
+  Relaxed xfloat: true
   Accurate PPU 128-byte Reservation Op Max Length: 0
   Stub PPU Traps: 0
   Full Width AVX-512: false
@@ -107,6 +108,7 @@ Video:
   Vblank Rate: 60
   Vblank NTSC Fixup: false
   DECR memory layout: false
+  Allow Host GPU Labels: false
   Vulkan:
     Adapter: AMD Radeon RX 6700 XT
     Force FIFO present mode: false
@@ -115,7 +117,8 @@ Video:
     Asynchronous Texture Streaming 2: true
     Enable FidelityFX Super Resolution Upscaling: true
     FidelityFX CAS Sharpening Intensity: 50
-    Asynchronous Queue Scheduler: Device
+    Asynchronous Queue Scheduler: Safe
+    Metal Semaphore: MTLEvent preferred
   Performance Overlay:
     Enabled: false
     Enable Framerate Graph: false
@@ -158,6 +161,7 @@ Audio:
   Time Stretching Threshold: 75
   Microphone Type: "Null"
   Microphone Devices: "@@@@@@@@@@@@"
+  Music Handler: Qt
 Input/Output:
   Keyboard: "Null"
   Mouse: Basic
@@ -169,6 +173,8 @@ Input/Output:
   Buzz emulated controller: "Null"
   Turntable emulated controller: "Null"
   GHLtar emulated controller: "Null"
+  Pad handler mode: Single-threaded
+  Pad handler sleep (microseconds): 1000
 System:
   License Area: SCEA
   Language: English (US)
@@ -180,7 +186,7 @@ Net:
   IP address: 0.0.0.0
   DNS address: 8.8.8.8
   IP swap list: ""
-  PSN status: Disconnected
+  PSN status: Simulated
 Miscellaneous:
   Automatically start games after boot: true
   Exit RPCS3 when process finishes: false
