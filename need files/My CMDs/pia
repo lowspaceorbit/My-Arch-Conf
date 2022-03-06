@@ -4,13 +4,13 @@ piactl login PIA/Login
 
 clear
 #do you want to start
-echo "pick 'c' to connect, pick 'd' to disconnect, and pick 'Q' to Quit"
+echo "pick 'c' to connect or pick 'd' to disconnect"
 read YN
 
 clear
 echo "Ok!"
 
-if [ $YN = 'c' ]
+if [ $YN = 'c' ] || [ $YN = 'C' ]
 then
         sleep .2
         clear
@@ -23,7 +23,7 @@ then
         piactl get vpnip
 fi
 
-if [ $YN = 'd' ]
+if [ $YN = 'd' ] || [ $YN = 'D' ]
     then
        sleep .2
        clear
@@ -32,13 +32,4 @@ if [ $YN = 'd' ]
         piactl disconnect
         sleep 2
         piactl get connectionstate
-fi
-
-if [ $YN = 'Q' ]
-    then
-        sleep .2
-        clear
-        echo "Quiting"
-        sleep 2
-        clear
 fi

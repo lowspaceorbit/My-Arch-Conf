@@ -47,6 +47,7 @@
         <value type="string" value="networkmanager applet"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="blueman"/>
         <value type="string" value="virt-manager"/>
         <value type="string" value="obs"/>
         <value type="string" value="privateinternetaccess"/>

@@ -59,7 +59,10 @@ wget https://installers.privateinternetaccess.com/download/pia-linux-3.2-06857.r
 chmod +x pia-linux-3.2-06857.run
 sudo rm -r pia-linux-3.2-06857.run.1
 ./pia-linux-3.2-06857.run
-
+piactl background enable
+cd ~/PIA
+piactl login Login
+piactl dedicatedip DIP
 fi
 
 sleep 1
