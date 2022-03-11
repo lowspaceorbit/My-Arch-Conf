@@ -1,2 +1,0 @@
-sudo mount /dev/sr0 /media 
-ps3-disc-dumper -o ~
