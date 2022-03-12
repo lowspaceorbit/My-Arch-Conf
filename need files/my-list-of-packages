@@ -56,13 +56,13 @@ read yn4
 if [ $yn4 = "y" ]
     then
 wget https://installers.privateinternetaccess.com/download/pia-linux-3.2-06857.run
-chmod +x pia-linux-3.2-06857.run
-sudo rm -r pia-linux-3.2-06857.run.1
-./pia-linux-3.2-06857.run
+chmod +x *.run
+./*.run
 piactl background enable
 cd ~/PIA
 piactl login Login
 piactl dedicatedip DIP
+
 fi
 
 sleep 1
@@ -74,16 +74,17 @@ read yn16
 
 if [ $yn16 = ‘y’ ]
 	then
-./VmWare
-if
+sudo pacman -S fuse2 gtkmm linux-headers pcsclite libcanberra && yay -S --noconfirm --needed ncurses5-compat-libs && yay -S --noconfirm --needed  vmware-workstation && sudo systemctl enable vmware-networks.service  vmware-usbarbitrator.service vmware-hostd.service && sudo modprobe -a vmw_vmci vmmon
+
+fi
 
 clear
 sleep .4
 
 echo "Do you want to install my YAY PKGs? 'y' for Yes 'N' to No"
-read YN2
+read YN42
 
-if [ $YN2 = "y" ]
+if [ $YN42 = "y" ]
   then
  yay -S all-repository-fonts basemark downgrade rpcs3-git ryujinx-ldn-bin yuzu-mainline-bin bash-pipes minecraft-launcher spotify spicetify-cli speedtest-cli-git ani-cli
 fi
@@ -92,9 +93,9 @@ clear
 sleep .5
 
 echo "do you want to install Custom Spotify theme (you had to install YAY and YAY PKGs) 'y' to install 'N' to not"
-read YN3
+read YN52
 
-if [ $YN3 = "y" ]
+if [ $YN52 = "y" ]
   then
 sudo chmod a+wr /opt/spotify
 sudo chmod a+wr /opt/spotify/Apps -R
@@ -124,11 +125,14 @@ clear
 sleep .5
 
 echo "do you want to install My EMU Confs as well?(you had to install YAY and YAY PKGs) 'y' to install 'N' to not"
-read YN9
+read YN239
 
-if [ $YN9 = "y" ]
+if [ $YN239 = "y" ]
   then
 sudo cp -r EMU-Conf-files/rpcs3 ~/.config
 sudo cp -r EMU-Conf-files/PCSX2 ~/.config
 sudo cp -r EMU-Conf-files/dolphin-emu ~/.config
 fi
+
+echo done
+
