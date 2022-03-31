@@ -32,6 +32,7 @@ Core:
   Enable TSX: Disabled
   Accurate xfloat: false
   Approximate xfloat: true
+  Relaxed xfloat: true
   Accurate PPU 128-byte Reservation Op Max Length: 0
   Stub PPU Traps: 0
   Full Width AVX-512: false
@@ -66,7 +67,7 @@ Video:
   Aspect ratio: 16:9
   Frame limit: Auto
   MSAA: Disabled
-  Shader Mode: Async Shader Recompiler
+  Shader Mode: Shader Recompiler
   Write Color Buffers: true
   Write Depth Buffer: false
   Read Color Buffers: false
@@ -103,10 +104,11 @@ Video:
   Minimum Scalable Dimension: 1024
   Shader Compiler Threads: 0
   Driver Recovery Timeout: 1000000
-  Driver Wake-Up Delay: 400
+  Driver Wake-Up Delay: 1
   Vblank Rate: 60
   Vblank NTSC Fixup: false
   DECR memory layout: false
+  Allow Host GPU Labels: false
   Vulkan:
     Adapter: AMD Radeon RX 6700 XT
     Force FIFO present mode: false
@@ -115,7 +117,8 @@ Video:
     Asynchronous Texture Streaming 2: false
     Enable FidelityFX Super Resolution Upscaling: false
     FidelityFX CAS Sharpening Intensity: 50
-    Asynchronous Queue Scheduler: Device
+    Asynchronous Queue Scheduler: Safe
+    Metal Semaphore: MTLEvent preferred
   Performance Overlay:
     Enabled: false
     Enable Framerate Graph: false
@@ -158,6 +161,7 @@ Audio:
   Time Stretching Threshold: 75
   Microphone Type: "Null"
   Microphone Devices: "@@@@@@@@@@@@"
+  Music Handler: Qt
 Input/Output:
   Keyboard: "Null"
   Mouse: Basic
@@ -169,6 +173,8 @@ Input/Output:
   Buzz emulated controller: "Null"
   Turntable emulated controller: "Null"
   GHLtar emulated controller: "Null"
+  Pad handler mode: Single-threaded
+  Pad handler sleep (microseconds): 1000
 System:
   License Area: SCEA
   Language: English (US)
