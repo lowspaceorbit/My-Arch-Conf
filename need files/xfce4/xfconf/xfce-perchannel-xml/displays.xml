@@ -10,13 +10,13 @@
       <property name="RefreshRate" type="double" value="160.000360"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
-      <property name="Primary" type="bool" value="false"/>
+      <property name="Primary" type="bool" value="true"/>
       <property name="Scale" type="empty">
         <property name="X" type="double" value="1.000000"/>
         <property name="Y" type="double" value="1.000000"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
+        <property name="X" type="int" value="1440"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -33,8 +33,8 @@
         <property name="Y" type="double" value="1.000000"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="3440"/>
-        <property name="Y" type="int" value="0"/>
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="540"/>
       </property>
     </property>
   </property>
@@ -46,13 +46,13 @@
       <property name="RefreshRate" type="double" value="160.000360"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
-      <property name="Primary" type="bool" value="false"/>
+      <property name="Primary" type="bool" value="true"/>
       <property name="Scale" type="empty">
         <property name="X" type="double" value="1.000000"/>
         <property name="Y" type="double" value="1.000000"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
+        <property name="X" type="int" value="1440"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -69,8 +69,8 @@
         <property name="Y" type="double" value="1.000000"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="3440"/>
-        <property name="Y" type="int" value="0"/>
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="540"/>
       </property>
     </property>
   </property>
