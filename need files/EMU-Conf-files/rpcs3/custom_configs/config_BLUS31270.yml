@@ -102,7 +102,7 @@ Video:
   Resolution Scale: 200
   Anisotropic Filter Override: 0
   Texture LOD Bias Addend: 0
-  Minimum Scalable Dimension: 512
+  Minimum Scalable Dimension: 501
   Shader Compiler Threads: 0
   Driver Recovery Timeout: 1000000
   Driver Wake-Up Delay: 1
@@ -121,7 +121,6 @@ Video:
     Enable FidelityFX Super Resolution Upscaling: true
     FidelityFX CAS Sharpening Intensity: 50
     Asynchronous Queue Scheduler: Safe
-    Metal Semaphore: MTLEvent preferred
   Performance Overlay:
     Enabled: false
     Enable Framerate Graph: false
@@ -189,7 +188,7 @@ Net:
   IP address: 0.0.0.0
   DNS address: 8.8.8.8
   IP swap list: ""
-  PSN status: Disconnected
+  PSN status: Simulated
 Miscellaneous:
   Automatically start games after boot: true
   Exit RPCS3 when process finishes: false

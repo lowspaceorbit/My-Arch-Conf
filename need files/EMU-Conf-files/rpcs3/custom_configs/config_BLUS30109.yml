@@ -10,7 +10,7 @@ Core:
   PPU LLVM Precompilation: true
   Thread Scheduler Mode: RPCS3 Scheduler
   Set DAZ and FTZ: false
-  SPU Decoder: Recompiler (LLVM)
+  SPU Decoder: Recompiler (ASMJIT)
   SPU GETLLAR polling detection: false
   SPU Debug: false
   MFC Debug: false
@@ -32,6 +32,7 @@ Core:
   Enable TSX: Disabled
   Accurate xfloat: false
   Approximate xfloat: true
+  Relaxed xfloat: true
   Accurate PPU 128-byte Reservation Op Max Length: 0
   Stub PPU Traps: 0
   Full Width AVX-512: false
@@ -55,6 +56,7 @@ Core:
   Sleep Timers Accuracy: As Host
   Performance Report Threshold: 500
   Enable Performance Report: false
+  Assume External Debugger: false
 VFS:
   Enable /host_root/: false
   Initialize Directories: true
@@ -107,6 +109,9 @@ Video:
   Vblank Rate: 60
   Vblank NTSC Fixup: false
   DECR memory layout: false
+  Allow Host GPU Labels: false
+  Disable MSL Fast Math: false
+  Software VkSemaphore: false
   Vulkan:
     Adapter: AMD Radeon RX 6700 XT
     Force FIFO present mode: false
@@ -115,7 +120,7 @@ Video:
     Asynchronous Texture Streaming 2: true
     Enable FidelityFX Super Resolution Upscaling: true
     FidelityFX CAS Sharpening Intensity: 50
-    Asynchronous Queue Scheduler: Device
+    Asynchronous Queue Scheduler: Safe
   Performance Overlay:
     Enabled: false
     Enable Framerate Graph: false
@@ -158,6 +163,7 @@ Audio:
   Time Stretching Threshold: 75
   Microphone Type: "Null"
   Microphone Devices: "@@@@@@@@@@@@"
+  Music Handler: Qt
 Input/Output:
   Keyboard: "Null"
   Mouse: Basic
@@ -169,6 +175,8 @@ Input/Output:
   Buzz emulated controller: "Null"
   Turntable emulated controller: "Null"
   GHLtar emulated controller: "Null"
+  Pad handler mode: Single-threaded
+  Pad handler sleep (microseconds): 1000
 System:
   License Area: SCEA
   Language: English (US)
